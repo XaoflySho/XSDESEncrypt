@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="16A304a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入Key" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHS-WA-Vi0">
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kwi-v6-fp2">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="⬇️加密⬇️"/>
+                                <connections>
+                                    <action selector="encryptButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6cU-fD-cME"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBL-WO-O6F">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="⬇️解密⬇️"/>
+                                <connections>
+                                    <action selector="decryptButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NLd-Kt-uFu"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sgm-4L-1I6">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="syP-o4-Xa0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z38-aJ-0nv">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="tK8-ZN-5aw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="50c-7H-VtO">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Bnm-Bf-Nyx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3Z-Ns-GSi">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="清除所有">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="cButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBB-mQ-g0c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Sgm-4L-1I6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1tV-wt-JcF"/>
+                            <constraint firstItem="z38-aJ-0nv" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Hg-2Z-32J"/>
+                            <constraint firstItem="Kwi-v6-fp2" firstAttribute="top" secondItem="nHS-WA-Vi0" secondAttribute="bottom" constant="8" id="4Ka-xT-VV4"/>
+                            <constraint firstItem="50c-7H-VtO" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="96y-OH-Xyk"/>
+                            <constraint firstItem="nHS-WA-Vi0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G02-eQ-5c5"/>
+                            <constraint firstItem="T3Z-Ns-GSi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="G0H-a3-Kgb"/>
+                            <constraint firstItem="50c-7H-VtO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Hwx-Ua-7h6"/>
+                            <constraint firstItem="50c-7H-VtO" firstAttribute="top" secondItem="vBL-WO-O6F" secondAttribute="bottom" constant="8" id="IgU-T3-syk"/>
+                            <constraint firstItem="Sgm-4L-1I6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="16" id="Ojo-Ao-1IJ"/>
+                            <constraint firstItem="Sgm-4L-1I6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WcK-Cb-FHD"/>
+                            <constraint firstItem="T3Z-Ns-GSi" firstAttribute="top" secondItem="50c-7H-VtO" secondAttribute="bottom" constant="8" id="Xb4-AG-8f0"/>
+                            <constraint firstItem="vBL-WO-O6F" firstAttribute="top" secondItem="z38-aJ-0nv" secondAttribute="bottom" constant="8" id="bJs-nr-9SH"/>
+                            <constraint firstItem="vBL-WO-O6F" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ec3-SP-MzN"/>
+                            <constraint firstItem="T3Z-Ns-GSi" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="f8J-yI-LDa"/>
+                            <constraint firstItem="nHS-WA-Vi0" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="g79-pe-srS"/>
+                            <constraint firstItem="nHS-WA-Vi0" firstAttribute="top" secondItem="Sgm-4L-1I6" secondAttribute="bottom" constant="8" id="oLE-cu-aEL"/>
+                            <constraint firstItem="z38-aJ-0nv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tPA-WB-3dC"/>
+                            <constraint firstItem="Kwi-v6-fp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="tnA-iM-6Bf"/>
+                            <constraint firstItem="z38-aJ-0nv" firstAttribute="top" secondItem="Kwi-v6-fp2" secondAttribute="bottom" constant="8" id="vC9-DA-rRR"/>
+                            <constraint firstItem="vBL-WO-O6F" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="z6d-7j-RbQ"/>
+                            <constraint firstItem="Kwi-v6-fp2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="zYk-z3-1EK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="decryptTextView" destination="50c-7H-VtO" id="4Kd-E6-9rv"/>
+                        <outlet property="encryptTextView" destination="z38-aJ-0nv" id="JaY-RT-qeV"/>
+                        <outlet property="inputTextView" destination="Sgm-4L-1I6" id="ocS-GH-lim"/>
+                        <outlet property="keyTextField" destination="nHS-WA-Vi0" id="eoh-F8-4Fs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
