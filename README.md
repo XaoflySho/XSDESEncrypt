@@ -20,3 +20,15 @@ XSDESEncrypt
 + (NSString *) decryptUseDES:(NSString *)plainText key:(NSString *)key;
 ```
 
+**其他方法**
+
+```objective-c
++ (NSString*) stringWithHexBytes2:(NSData *)sender;
+
++ (NSData*) parseHexToByteArray:(NSString*) hexString;
+
++ (NSString *) parseByte2HexString:(Byte *) bytes;
+
++ (NSString *) parseByteArray2HexString:(Byte[]) bytes;
+```
+
