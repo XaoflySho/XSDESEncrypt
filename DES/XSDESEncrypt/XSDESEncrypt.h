@@ -15,4 +15,14 @@
 /****** 解密 ******/
 + (NSString *) decryptUseDES:(NSString *)plainText key:(NSString *)key;
 
+
++ (NSString*) stringWithHexBytes2:(NSData *)sender;
+
++ (NSData*) parseHexToByteArray:(NSString*) hexString;
+
+
++ (NSString *) parseByte2HexString:(Byte *) bytes;
+
++ (NSString *) parseByteArray2HexString:(Byte[]) bytes;
+
 @end

@@ -42,7 +42,7 @@
 - (IBAction)decryptButtonClick:(id)sender {
     
     _decryptTextView.text = [XSDESEncrypt decryptUseDES:_encryptTextView.text key:_keyTextField.text];
-    
+
 }
 
 - (IBAction)cButtonClick:(id)sender {
