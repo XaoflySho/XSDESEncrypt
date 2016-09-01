@@ -1,12 +1,12 @@
-# XSDESEncrypt
+# XSDESEncrypt&XSString
 
-XSDESEncrypt
+## XSDESEncrypt
 
-## 屏幕截图
+### 屏幕截图
 
 ![](https://raw.githubusercontent.com/XaoflySho/XSDESEncrypt/master/DESEncrypt.PNG)
 
-## 使用方法
+### 使用方法
 
 **加密**
 
@@ -30,5 +30,27 @@ XSDESEncrypt
 + (NSString *) parseByte2HexString:(Byte *) bytes;
 
 + (NSString *) parseByteArray2HexString:(Byte[]) bytes;
+```
+
+## XSString
+
+###方法
+
+**移除字符串中的HTML标签**
+
+```objective-c
+- (NSString *)stringByRemovingHTMLMark;
+```
+
+**生成一个由大写英文字母组成的随机字符串**
+
+```objective-c
++ (NSString *)generatesRandomStringWithLength:(int)lenght;
+```
+
+**将JSON对象（NSArray、NSDictionary）转换为字符串**
+
+```objective-c
++ (NSString *)stringByJSONObject:(id)JSONObject;
 ```
 
